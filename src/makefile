@@ -16,7 +16,7 @@ LINKER   = ar rvs
 LFLAGS   = 
 
 # change these to set the proper directories where each files shoould be
-SRCDIR   = src
+SRCDIR   = dlms
 OBJDIR   = obj
 BINDIR   = lib
 

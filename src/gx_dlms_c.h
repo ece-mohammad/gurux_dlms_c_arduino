@@ -6,8 +6,8 @@ extern "C" {
 #endif // __cplusplus
 
 #define GX_DLMS_MICROCONTROLLER
-#define DLMS_IGNORE_MALLOC
 
+#include "ArduinoIgnore.h"
 
 #include "include/apdu.h"
 #include "include/asn1Parser.h"
