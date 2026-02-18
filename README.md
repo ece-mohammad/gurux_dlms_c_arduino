@@ -15,10 +15,15 @@ This is an un-official arduino library for the Gurux DLMS.c.
 
 1. Install library from Arduino IDE (1.5+)
 2. Include the library in you code
-3. Define your `gxignore.h` file, it should define all the stuff you want to trim off the DLMS.c library, and make sure to include it in your code before the library include
+3. Carete `ArduinoIgnore.h` file, it should define all the stuff you want to trim off the DLMS.c library. Check `gxignore.h` for a full list of `#defines` for stuff you can turn on/off.
+
+    > `ArduinoIgnore.h` is automatically included by the library, you don't need to manually include it.
+    > `ArduinoIgnore.h` is used by the library files, it's required to build the project. You must cerate it even if it's going to be empty (sorry about that).
+
+4. Include the library in your source files:
 
     ```c
-    #include "gxignore.h"
     #include "gx_dlms_c.h"
     ```
+5. Write your code, build or verify, and download it.
 
